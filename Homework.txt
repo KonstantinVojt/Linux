@@ -1,0 +1,13 @@
+   0 mkdir -p /home/user/start
+   1 cd /home/user/start
+   2 touch 1.txt
+   3 echo "Start" >> 1.txt 
+   4 cat 1.txt
+   5 date >> 1.txt
+   6 mkdir -p /home/opt/task
+   7 touch /home/opt/task/start.txt
+   8 cp /home/user/start/1.txt /home/opt/task/start.txt
+   9 ls -a / | tail -4 >> /home/opt/task/start.txt
+  10 clear
+  11 history
+  12 history > Homework.txt
