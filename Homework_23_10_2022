@@ -1,0 +1,15 @@
+   0 df -h | head -3 > /tmp/file.txt
+   1 vi /tmp/file.txt
+   2 chmod g+w,u-r,o+x /tmp/file.txt
+   3 export NAME=konstantin
+   4 export VAR=any
+   5 echo $NAME $VAR >> /tmp/file.txt
+   6 nano /tmp/file.txt
+   7 cd /tmp
+   8 ls
+   9 ls -l
+  10 vi file.txt
+  11 cear
+  12 clear
+  13 history
+  14 history > Homework_23_10_2022
