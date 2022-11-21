@@ -1,0 +1,30 @@
+   0 nano sleeper.sh
+   1 ls
+   2 chmod 744 sleeper.sh 
+   3 ls
+   4 ./sleeper.sh 
+   5 nano sleeper.sh
+   6 ./sleeper.sh 
+   7 nano sleeper.sh
+   8 ./sleeper.sh 
+   9 tree /tmp
+  10 cat /tmp/newfile.txt 
+  11 clear
+  12 history
+  13 history > History.txt
+ 
+                                           NANO:
+#!/bin/bash
+for run in {1..10}
+do
+date +"%H:%M:%S"
+ps -ef | wc -l
+sleep 1
+done
+cat /proc/cpuinfo > /tmp/newfile.txt
+cat /etc/os-release | head -1 | grep -o Alpine
+cat /etc/os-release | head -1 | grep -o Alpine >> /tmp/newfile.txt
+for run in {50..100}
+do
+touch /tmp/$run.txt
+done
